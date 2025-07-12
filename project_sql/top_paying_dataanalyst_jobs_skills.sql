@@ -9,6 +9,6 @@ WITH top_paying_jobs AS (
     ORDER BY salary DESC 
     LIMIT 10
 )
-SELECT t.*,s.skill_id,s.skills FROM top_paying_jobs t
+SELECT t.*,s.skill_id,s.skills,COUNT(*) AS count FROM top_paying_jobs t
 INNER JOIN skills_job_dim sj USING(job_id)
 INNER JOIN skills_dim s ON sj.skill_id=s.skill_id;
