@@ -31,8 +31,7 @@ I wanted to answer these key questions using SQL:
 
 ### 1. What are the top paying data analyst jobs?
 
-![top 10 paying data analyst jobs](Visualizations\#1.png)
-
+![top 10 paying data analyst jobs](Visualizations/top_paying_dataanalyst_jobs.png)
 *Source:- ChatGPT generated image*
 
 I filtered job listings by salary, focusing on remote positions. Here's what I found:
@@ -52,8 +51,7 @@ ORDER BY salary DESC LIMIT 10;
 
 ### 2. What skills are required for top paying data analyst jobs?
 
-![top 10 data analyst skills](Visualizations\#2.png)
-
+![top 10 data analyst skills](Visualizations/top_paying_dataanalyst_jobs_skills.png)
 *Source:- ChatGPT generated image*
 
 I checked which skills show up most often in remote data analyst job posts:
@@ -83,7 +81,7 @@ INNER JOIN skills_dim s ON sj.skill_id=s.skill_id;
 
 ### 3. What is the most in-demand skill for data analyst?
 
-![top in-demand data analyst skills](Visualizations\#3.png)
+![top in-demand data analyst skills](Visualizations/indemand_skill_dataanalyst.png)
 
 *Source:- ChatGPT generated image*
 
@@ -140,7 +138,7 @@ ORDER BY salary DESC;
 ```
 ### 5. What is the most optimal skills for data analyst? (High paying and high demanding)
 
-![optimal skills for data analyst](Visualizations\#5.png)
+![optimal skills for data analyst](Visualizations/optimal_dataanalyst_skills.png)
 
 *Source:- ChatGPT generated image*
 | Skill      | Demand Count | Average Salary (USD) |
